@@ -39,7 +39,7 @@ user that has the following privileges:
 1. Download the repository
 2. in mysql, run `source file.sql` on the files from the repository, in the order listed below. Remember to get the path to the file correct, if the file isn't in the current folder. \
 Or you could press "run-sql script" from your editor on each off the files
-[Image of run-sql script](https://github.com/AndersSpringborg/test_db/blob/master/Screenshot%202020-03-24%2016.43.36.png)
+![Image of run-sql script](https://github.com/AndersSpringborg/test_db/blob/master/run.png)
 
     1. load_departments.dump
     2. load_employees.dump
