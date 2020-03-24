@@ -40,15 +40,15 @@ user that has the following privileges:
 2. in mysql, run `source file.sql` on the files from the repository, in the order listed below. Remember to get the path to the file correct, if the file isn't in the current folder. \
 Or you could press "run-sql script" from your editor on each off the files
 ![Image of run-sql script](https://github.com/AndersSpringborg/test_db/blob/master/run.png)
-
-    1. load_departments.dump
-    2. load_employees.dump
-    3. load_dept_emp.dump
-    4. load_dept_manager.dump
-    5. load_titles.dump
-    6. load_salaries1.dump
-    7. load_salaries2.dump
-    8. load_salaries3.dump
+    1. employees.sql
+    2. load_departments.dump
+    3. load_employees.dump
+    4. load_dept_emp.dump
+    5. load_dept_manager.dump
+    6. load_titles.dump
+    7. load_salaries1.dump
+    8. load_salaries2.dump
+    9. load_salaries3.dump
 
 example \
 my folder structure
