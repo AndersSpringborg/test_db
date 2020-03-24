@@ -37,17 +37,59 @@ user that has the following privileges:
 ## Installation:
 
 1. Download the repository
-2. Change directory to the repository
+2. in mysql, run `source file.sql` on the files from the repository, in the order listed below. Remember to get the path to the file correct, if the file isn't in the current folder. \
+Or you could press "run-sql script" from your editor on each off the files
 
-Then run
+    1. load_departments.dump
+    2. load_employees.dump
+    3. load_dept_emp.dump
+    4. load_dept_manager.dump
+    5. load_titles.dump
+    6. load_salaries1.dump
+    7. load_salaries2.dump
+    8. load_salaries3.dump
 
-    mysql < employees.sql
+example \
+my folder structure
+```bash
+.                           <---- Im am currently here
+├── docker-compose.yml
+└── test_db                 <--- this is a folder named "test_db"
+    ├── Changelog
+    ├── README.md
+    ├── README_old.md
+    ├── employees.sql
+    ├── images
+    ├── load_departments.dump
+    ├── load_dept_emp.dump
+    ├── load_dept_manager.dump
+    ├── load_employees.dump
+    ├── load_salaries1.dump
+    ├── load_salaries2.dump
+    ├── load_salaries3.dump
+    ├── load_titles.dump
+    ├── objects.sql
+    ├── sakila
+    ├── show_elapsed.sql
+    ├── sql_test.sh
+    ├── test_employees_md5.sql
+    └── test_employees_sha.sql
+```
+IN MYSQL i whould type
+```bash
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 9
+Server version: 10.2.16-MariaDB MariaDB Server
 
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
-If you want to install with two large partitioned tables, run
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-    mysql < employees_partitioned.sql
-
+MySql > source test_db/load_departments.sql;
+...
+source test_db/load_employees.sql;
+...
+```
 
 ## Testing the installation
 
